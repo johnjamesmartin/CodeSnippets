@@ -5,12 +5,27 @@
     <div class="col-md-12">
         <form class="form-horizontal" data-ng-submit="update()" novalidate>
             <fieldset>
+
+                <!-- Description -->
+
                 <div class="form-group">
-                    <label class="control-label" for="name">Name</label>
+                    <label class="control-label" for="description">Description</label>
                     <div class="controls">
-                        <input type="text" data-ng-model="code.name" id="name" class="form-control" placeholder="Name" required>
+                        <input type="text" data-ng-model="code.description" id="description" class="form-control" placeholder="Enter code description here." required>
                     </div>
                 </div>
+
+                <!-- Code Snippet -->
+
+                <div class="form-group">
+                    <label class="control-label" for="code">Code Snippet</label>
+                    <div class="controls">
+                        <textarea rows="10" cols="30" data-ng-model="code.code" id="code" class="form-control" placeholder="Enter code snippet here." required></textarea>
+                    </div>
+                </div>
+
+                <!-- Submit -->
+
                 <div class="form-group">
                     <input type="submit" value="Update" class="btn btn-default">
                 </div>
